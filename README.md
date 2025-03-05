@@ -7,25 +7,21 @@ Bu depo, 42 Piscine süreci boyunca tamamladığım projelerin çözümlerini i�
 
 ## ✅ Tamamlanan Projeler
 
-### 📍 **Proje 1: Shell00**
-   - **Alınan Not:** [50]
-   - **Açıklama:** [Temel terminal komutları]
+### 📍 **Proje: Shell00**
+   - **Alınan Not:** 50
 
-### 📍 **Proje 2: İkinci Proje Adı**
-   - **Alınan Not:** [Alınan notu buraya yazın]
-   - **Açıklama:** [Proje hakkında kısa bir açıklama ekleyin]
+### 📍 **Proje: C00**
+   - **Alınan Not:** 60
 
-### 📍 **Proje 3: Üçüncü Proje Adı**
-   - **Alınan Not:** [Alınan notu buraya yazın]
-   - **Açıklama:** [Proje hakkında kısa bir açıklama ekleyin]
+### 📍 **Proje: C01**
+   - **Alınan Not:** 85
+
+### 📍 **Proje: C02**
+   - **Alınan Not:** 55
+
 
 ---
 
-## 🤝 Projeyi Klonlamak
+## 🤝 İletişim
 
-Projeyi bilgisayarınıza klonlamak için şu adımları takip edebilirsiniz:
-
-1. Depoyu klonlayın:
-
-   ```bash
-   git clone https://github.com/Kardoxa06/ecole42_piscine.git
+Profilimdeki bağlantılar üzerinden benimle iletişime geçebilirsiniz.
