@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ozkose <ozkose@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 16:37:48 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/04 18:55:09 by ozkose           ###   ########.fr       */
+/*   Updated: 2025/03/06 14:55:15 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcpy(char *dest, char *src)
 	i = 0;
 	while (src[i])
 	{
-		src[i] = dest[i];
+		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
