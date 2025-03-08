@@ -3,26 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ozkose <ozkose@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 16:49:47 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/04 16:51:12 by ozkose           ###   ########.fr       */
+/*   Updated: 2025/03/08 19:29:09 by ozkose           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (src[i])
+	while (src[i] && i < n)
 	{
-		while (i <= n)
-		{
-			dest[i] = src[i];
-			i++;
-		}
+		dest[i] = src[i];
+		i++;
+	}
+	while (n >= i)
+	{
 		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }
