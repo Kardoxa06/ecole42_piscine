@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/07 11:46:55 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/07 11:51:02 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/09 07:18:10 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ int	ft_revursive_factorial(int nb)
 		return (nb * ft_revursive_factorial(nb - 1));
 	}
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     printf("%d", ft_revursive_factorial(5));
-// }

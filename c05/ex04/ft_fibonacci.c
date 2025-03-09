@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 12:23:40 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/08 13:38:08 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/09 07:18:19 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,3 @@ int	ft_fibonacci(int index)
 		return (index);
 	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
-
-// int main()
-// {
-// 	printf("%d \n", ft_fibonacci(6));
-// }

@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 12:10:59 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/08 12:17:55 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/09 07:18:15 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,3 @@ int	ft_recursive_power(int nb, int power)
 		return (nb * ft_recursive_power(nb, (power - 1)));
 	return (result);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%d \n", ft_recursive_power(0,0));
-// 	printf("%d \n", ft_recursive_power(2,6));
-// 	printf("%d \n", ft_recursive_power(2,5));
-// 	printf("%d \n", ft_recursive_power(2,0));
-// 	printf("%d \n", ft_recursive_power(2,1));
-// }

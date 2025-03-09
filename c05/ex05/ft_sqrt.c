@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 13:38:45 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/08 15:24:18 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/09 07:18:22 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,3 @@ int	ft_sqrt(int nb)
 	}
 	return (i);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%d \n", ft_sqrt(5));
-// 	printf("%d \n", ft_sqrt(25));
-// 	printf("%d \n", ft_sqrt(36));
-// }

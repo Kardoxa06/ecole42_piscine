@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 15:33:13 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/08 16:13:27 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/09 07:18:28 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ int	ft_find_next_prime(int nb)
 	}
 	return (nb);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%d \n", ft_find_next_prime(3));
-// 	printf("%d \n", ft_find_next_prime(20));
-// 	printf("%d \n", ft_find_next_prime(24));
-// }

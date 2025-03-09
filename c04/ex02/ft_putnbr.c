@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 14:43:54 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/08 18:06:44 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/09 07:17:28 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ void    ft_putnbr(int nb)
 		ft_putnbr(nb*-1);
 	}
 }
-
-// int main()
-// {
-// 	ft_putnbr(42);
-// 	ft_putchar('\n');
-// 	ft_putnbr(-2147483648);
-// 	ft_putchar('\n');
-// 	ft_putnbr(-2147483644);
-// }
