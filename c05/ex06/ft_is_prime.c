@@ -1,29 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/02 16:49:47 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/09 03:08:58 by ozkose           ###   ########.tr       */
+/*   Created: 2025/03/08 15:26:16 by ozkose            #+#    #+#             */
+/*   Updated: 2025/03/08 16:12:55 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_is_prime(int nb)
 {
-	unsigned int	i;
+	int	i;
 
-	i = 0;
-	while (src[i] && i < n)
+	if (nb <= 1)
+		return (0);
+	else if (nb <= 3)
+		return (1);
+	else if (nb > 3)
 	{
-		dest[i] = src[i];
-		i++;
+		i = 3;
+		while (i < nb)
+		{
+			if (nb % i)
+				i++;
+			else
+				return (0);
+		}
 	}
-	while (n > i)
+	if (i > nb)
 	{
-		dest[i] = '\0';
-		i++;
+		return (1);
 	}
-	return (dest);
+	return (1);
 }
+
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%d \n", ft_is_prime(3));
+// 	printf("%d \n", ft_is_prime(23));
+// 	printf("%d \n", ft_is_prime(25));
+// }

@@ -1,29 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/02 16:49:47 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/09 03:08:58 by ozkose           ###   ########.tr       */
+/*   Created: 2025/03/08 13:38:45 by ozkose            #+#    #+#             */
+/*   Updated: 2025/03/08 15:24:18 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_sqrt(int nb)
 {
-	unsigned int	i;
+	int	i;
 
-	i = 0;
-	while (src[i] && i < n)
+	if (nb <= 0)
+		return (0);
+	else if (nb <= 1)
+		return (1);
+	else if (nb > 2)
 	{
-		dest[i] = src[i];
-		i++;
+		i = 2;
+		while (i <= nb)
+		{
+			if ((i * i) != nb)
+				i++;
+			else
+				break ;
+		}
 	}
-	while (n > i)
+	if (i > nb)
 	{
-		dest[i] = '\0';
-		i++;
+		return (0);
 	}
-	return (dest);
+	return (i);
 }
+
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%d \n", ft_sqrt(5));
+// 	printf("%d \n", ft_sqrt(25));
+// 	printf("%d \n", ft_sqrt(36));
+// }

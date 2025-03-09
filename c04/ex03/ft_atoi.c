@@ -1,35 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/05 12:19:59 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/09 03:10:49 by ozkose           ###   ########.tr       */
+/*   Created: 2025/03/08 18:08:31 by ozkose            #+#    #+#             */
+/*   Updated: 2025/03/08 19:11:54 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+#include <unistd.h>
+
+int ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return (0);
+}
+
+int	ft_atoi(char *str)
 {
 	int	i;
-	int	p;
+	int sign;
 
 	i = 0;
-	if (to_find[i] == '\0')
-		return (str);
-	while (str[i])
+	sign = 1;
+	while(str[i] && ((str[i] >= '0' && str[i] <= '9') 
+	|| (str[i] == '-' || str[i] == '+') || (str[i] == ' ')))
 	{
-		p = 0;
-		while (str[i] && str[i + p] == to_find[p])
+		if (str[i] == '-' || str[i] == '+')
 		{
-			if (to_find[p + 1] == '\0')
-			{
-				return (&str[i]);
-			}
-			p++;
+			sign = sign * (-1);
+			i++;
 		}
-		i++;
+		else if (str[i] == ' ')
+		{
+			i++;
+		}
+		else
+		{
+		
+			ft_putchar(str[i]);
+			i++;
+		}
+
 	}
 	return (0);
+}
+
+int main()
+{
+	ft_atoi(" ---+--+1234ab567");
 }

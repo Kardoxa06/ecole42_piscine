@@ -1,29 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/02 16:49:47 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/09 03:08:58 by ozkose           ###   ########.tr       */
+/*   Created: 2025/03/08 15:33:13 by ozkose            #+#    #+#             */
+/*   Updated: 2025/03/08 16:13:27 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_find_next_prime(int nb)
 {
-	unsigned int	i;
+	int	i;
 
-	i = 0;
-	while (src[i] && i < n)
+	if (nb > 3)
 	{
-		dest[i] = src[i];
-		i++;
+		i = 3;
+		while (i < nb)
+		{
+			if (nb % i)
+				i++;
+			else
+				nb++;
+		}
 	}
-	while (n > i)
+	if (i > nb)
 	{
-		dest[i] = '\0';
-		i++;
+		return (nb);
 	}
-	return (dest);
+	return (nb);
 }
+
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%d \n", ft_find_next_prime(3));
+// 	printf("%d \n", ft_find_next_prime(20));
+// 	printf("%d \n", ft_find_next_prime(24));
+// }
