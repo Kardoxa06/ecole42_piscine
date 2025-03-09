@@ -6,20 +6,24 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 11:45:38 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/05 11:58:04 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/09 04:43:43 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcat(char *dest, char *src)
 {
-	unsigned int	i;
+	int	i;
+	int	y;
 
 	i = 0;
+	y = 0;
+	while (dest[y])
+		y++;
 	while (src[i])
 	{
-		dest[i] = src[i];
+		dest[y + i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	dest[y + i] = '\0';
 	return (dest);
 }
