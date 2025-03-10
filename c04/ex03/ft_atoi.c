@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 18:08:31 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/08 19:11:54 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/10 16:26:21 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,12 @@ int	ft_atoi(char *str)
 	while(str[i] && ((str[i] >= '0' && str[i] <= '9') 
 	|| (str[i] == '-' || str[i] == '+') || (str[i] == ' ')))
 	{
-		if (str[i] == '-' || str[i] == '+')
+		if (str[i] == '-')
 		{
 			sign = sign * (-1);
 			i++;
 		}
-		else if (str[i] == ' ')
+		else if (str[i] == ' ' || str[i] == '+')
 		{
 			i++;
 		}
@@ -46,9 +46,4 @@ int	ft_atoi(char *str)
 
 	}
 	return (0);
-}
-
-int main()
-{
-	ft_atoi(" ---+--+1234ab567");
 }

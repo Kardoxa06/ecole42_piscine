@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ozkose <ozkose@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 13:55:51 by ozkose            #+#    #+#             */
-/*   Updated: 2025/02/19 14:10:58 by ozkose           ###   ########.fr       */
+/*   Updated: 2025/03/09 06:16:40 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void	ft_is_negative(int n)
 {
-	char	negative;
-	char	positive;
-
-	negative = 'N';
-	positive = 'P';
 	if (n >= 0)
 	{
-		write(1, &positive, 1);
+		write(1, "P", 1);
 	}
 	else
 	{
-		write(1, &negative, 1);
+		write(1, "N", 1);
 	}
+}
+
+int main()
+{
+	ft_is_negative(5);
 }
