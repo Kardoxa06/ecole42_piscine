@@ -29,7 +29,7 @@ Bu depo, 42 Piscine süreci boyunca tamamladığım projelerin çözümlerini i�
    - **Alınan Not:** 80
    
 ### 📍 **Proje: C06**
-   - **Alınan Not:** 100
+   - **Alınan Not:** 
    
 
 
