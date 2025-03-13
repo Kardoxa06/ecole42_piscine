@@ -6,7 +6,7 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 15:26:16 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/09 07:18:25 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/13 13:19:30 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_is_prime(int nb)
 		return (0);
 	else if (nb <= 3)
 		return (1);
-	else if (nb > 3)
+	else
 	{
 		i = 3;
 		while (i < nb)

@@ -6,13 +6,13 @@
 /*   By: ozkose <ozkose@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 20:41:37 by ozkose            #+#    #+#             */
-/*   Updated: 2025/03/08 20:44:27 by ozkose           ###   ########.tr       */
+/*   Updated: 2025/03/11 20:26:47 by ozkose           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	print(char *text)
+void	ft_print(char *text)
 {
 	int	i;
 
@@ -34,7 +34,7 @@ int	main(int argc, char **argv)
 	i = argc - 1;
 	while (i > 0)
 	{
-		print(argv[i]);
+		ft_print(argv[i]);
 		i--;
 	}
 }

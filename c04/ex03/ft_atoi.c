@@ -10,6 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
+int	ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return (0);
+}
+
 int	ft_atoi(char *str)
 {
 	int	i;
@@ -29,7 +37,7 @@ int	ft_atoi(char *str)
 			i++;
 		else
 		{
-			return(str[i]);
+			ft_putchar(str[i]);
 			i++;
 		}
 	}
