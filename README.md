@@ -23,13 +23,13 @@ Bu depo, 42 Piscine süreci boyunca tamamladığım projelerin çözümlerini i�
    - **Alınan Not:** 75
 
 ### 📍 **Proje: C04**
-   - **Alınan Not:** 70
+   - **Alınan Not:** 50 (70 puanlık dosya içeriği)
    
 ### 📍 **Proje: C05**
    - **Alınan Not:** 80
    
 ### 📍 **Proje: C06**
-   - **Alınan Not:** 
+   - **Alınan Not:** 70
    
 
 
